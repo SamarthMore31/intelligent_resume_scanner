@@ -39,7 +39,7 @@ Command-Line Interface: Includes a **main.py** script for users who prefer to ru
 
 # Setup and Installation
 Follow these steps to set up the project locally.
-
+Run the following commands in your terminal:
 1. Clone the Repository
 
 **git clone https://github.com/YourGitHubUsername/intelligent-resume-scanner.git
