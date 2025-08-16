@@ -1,12 +1,13 @@
-Intelligent Resume Scanner
+# Intelligent Resume Scanner
+
 An automated, AI-powered tool to parse, score, and rank candidate resumes against a job description, helping to streamline the initial phase of the recruitment process.
 
-About The Project
+# About The Project
 Recruiters often spend hours manually sifting through hundreds of resumes for a single job opening. This project automates that initial screening process by intelligently ranking candidates, allowing hiring managers to focus their time on the most qualified applicants.
 
 The application leverages a sophisticated hybrid scoring model that combines traditional keyword matching with modern semantic analysis to provide a nuanced and accurate evaluation of each candidate.
 
-Key Features
+# Key Features
 Interactive Web Interface: A user-friendly web app built with Streamlit for easy uploading of job descriptions and resumes.
 
 Intelligent Parsing: Uses spaCy for Natural Language Processing to accurately extract key information from PDF resumes, including:
@@ -27,7 +28,7 @@ Exportable Results: The final ranked list of candidates can be downloaded as a C
 
 Command-Line Interface: Includes a main.py script for users who prefer to run the analysis from the terminal.
 
-Technology Stack
+# Technology Stack
 Frontend: Streamlit
 
 Backend & NLP: Python, spaCy, Pandas
@@ -36,7 +37,7 @@ AI / Machine Learning: Sentence-Transformers (Hugging Face), PyTorch
 
 PDF Parsing: PyMuPDF
 
-Setup and Installation
+# Setup and Installation
 Follow these steps to set up the project locally.
 
 Clone the Repository
@@ -68,7 +69,7 @@ The application requires an English language model from spaCy.
 Bash
 
 python -m spacy download en_core_web_sm
-Usage
+# Usage
 You can run the project in two ways:
 
 1. Using the Streamlit Web App (Recommended)
@@ -97,7 +98,7 @@ Bash
 python main.py
 The final report will be saved at results/ranking_output.csv.
 
-Configuration
+# Configuration
 You can customize the skills that the scanner looks for by editing the **SKILL_DB** list located in the following file:
 **utils/skill_extractor.py**
 
