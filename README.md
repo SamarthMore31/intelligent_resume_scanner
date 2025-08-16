@@ -1,4 +1,4 @@
-**#Intelligent Resume Scanner**
+Intelligent Resume Scanner
 An automated, AI-powered tool to parse, score, and rank candidate resumes against a job description, helping to streamline the initial phase of the recruitment process.
 
 About The Project
