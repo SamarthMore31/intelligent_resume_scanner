@@ -1,0 +1,8 @@
+numpy==1.26.4
+scipy==1.13.0
+scikit-learn==1.4.2
+sentence-transformers==2.7.0
+streamlit==1.30.0
+pandas==2.1.4
+PyMuPDF==1.23.8
+spacy==3.7.2
