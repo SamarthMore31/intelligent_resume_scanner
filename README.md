@@ -98,7 +98,7 @@ python main.py
 The final report will be saved at results/ranking_output.csv.
 
 Configuration
-You can customize the skills that the scanner looks for by editing the SKILL_DB list located in the following file:
-utils/skill_extractor.py
+You can customize the skills that the scanner looks for by editing the **SKILL_DB** list located in the following file:
+**utils/skill_extractor.py**
 
 Simply add or remove skills (in lowercase) to tailor the scanner to different job roles and industries.
