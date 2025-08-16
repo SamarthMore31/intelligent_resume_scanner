@@ -26,77 +26,71 @@ Semantic Score: Uses a pre-trained AI model to analyze the contextual similarity
 
 Exportable Results: The final ranked list of candidates can be downloaded as a CSV file directly from the web app.
 
-Command-Line Interface: Includes a main.py script for users who prefer to run the analysis from the terminal.
+Command-Line Interface: Includes a **main.py** script for users who prefer to run the analysis from the terminal.
 
 # Technology Stack
-Frontend: Streamlit
+**Frontend:** Streamlit
 
-Backend & NLP: Python, spaCy, Pandas
+**Backend & NLP:** Python, spaCy, Pandas
 
-AI / Machine Learning: Sentence-Transformers (Hugging Face), PyTorch
+**AI / Machine Learning:** Sentence-Transformers (Hugging Face), PyTorch
 
-PDF Parsing: PyMuPDF
+**PDF Parsing:** PyMuPDF
 
 # Setup and Installation
 Follow these steps to set up the project locally.
 
-Clone the Repository
+1. Clone the Repository
 
-Bash
+**git clone https://github.com/YourGitHubUsername/intelligent-resume-scanner.git
+cd intelligent-resume-scanner**
 
-git clone https://github.com/YourGitHubUsername/intelligent-resume-scanner.git
-cd intelligent-resume-scanner
-Create and Activate a Virtual Environment
-
-Bash
+2. Create and Activate a Virtual Environment
 
 # For Windows
-python -m venv venv
-.\venv\Scripts\Activate
+**python -m venv venv
+.\venv\Scripts\Activate**
 
 # For macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-Install Dependencies
-Install all the required packages using the requirements.txt file.
+**python3 -m venv venv
+source venv/bin/activate**
 
-Bash
+3. Install Dependencies
+Install all the required packages using the **requirements.txt** file.
 
-pip install -r requirements.txt
-Download the spaCy Language Model
+**pip install -r requirements.txt**
+
+4. Download the spaCy Language Model
 The application requires an English language model from spaCy.
 
-Bash
+**python -m spacy download en_core_web_sm**
 
-python -m spacy download en_core_web_sm
 # Usage
 You can run the project in two ways:
 
-1. Using the Streamlit Web App (Recommended)
+1. Using the Streamlit Web App
 This is the easiest and most interactive way to use the application.
 
-Run the following command in your terminal:
+  A. Run the following command in your terminal:
 
-Bash
+  **streamlit run app.py**
+  
+  B. Open your web browser and navigate to the local URL provided.
 
-streamlit run app.py
-Open your web browser and navigate to the local URL provided (usually http://localhost:8501).
-
-Follow the on-screen instructions to upload a job description and resumes, then click "Rank Candidates" to see the results.
+  C. Follow the on-screen instructions to upload a job description and resumes, then click "Rank Candidates" to see the results.
 
 2. Using the Command-Line Script
 This method is useful for automated processing and will save the output to a CSV file.
 
-Place your job description in a file at data/job_description.txt.
+  A. Place your job description in a file at **data/job_description.txt**.
 
-Place all candidate resumes (PDFs) inside the data/resumes/ folder.
+  B. Place all candidate resumes (PDFs) inside the **data/resumes/** folder.
 
-Run the script from your terminal:
+  C. Run the script from your terminal:
 
-Bash
+  **python main.py**
 
-python main.py
-The final report will be saved at results/ranking_output.csv.
+  D. The final report will be saved at **results/ranking_output.csv**.
 
 # Configuration
 You can customize the skills that the scanner looks for by editing the **SKILL_DB** list located in the following file:
